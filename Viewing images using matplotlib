@@ -1,0 +1,8 @@
+import cv2
+import matplotlib.pyplot as plt
+ 
+# Reading color image
+img=cv2.imread("E:/DIP/img1.jpg")
+ 
+#Displaying image in plot
+plt.imshow(img)

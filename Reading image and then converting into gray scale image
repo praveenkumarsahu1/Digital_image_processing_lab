@@ -1,0 +1,9 @@
+import numpy as np
+import cv2
+# read the images
+grey_img = cv2.imread("E:/DIP/img2.jpg")
+# read image as grey scale
+grey_img = cv2.imread("E:/DIP/img1.jpg", cv2.IMREAD_GRAYSCALE)
+ # save image
+status = cv2.imwrite("E:/DIP/img5.jpg",grey_img)
+print("Image written to file-system : ",status

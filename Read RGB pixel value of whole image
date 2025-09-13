@@ -1,0 +1,18 @@
+import numpy as np
+from PIL import Image
+# Read in image file
+img = Image.open("E:/DIP/img3.jpg")
+#Create a PIL.Image object
+
+image_rgb = img.convert("RGB")
+#Convert to RGB colorspace
+
+#Get Width and Height of Image
+
+width, height = image_rgb.size
+#Iterate through all pixels of Image and get R, G, B value from that pixel
+
+for x in range(0, width):
+    for y in range(0, height):
+        r, g, b = image_rgb.getpixel((x,y))
+        print(image_rgb.getpixel((x,y)))

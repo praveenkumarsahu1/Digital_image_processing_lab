@@ -1,0 +1,10 @@
+import numpy as np
+import cv2
+  
+# read the images
+grey_img = np.random.randint(255, size=(300, 600, 3))
+
+isWritten = cv2.imwrite("E:/unnati/DIP/img4.jpg", grey_img)
+
+if isWritten:
+print('The image is successfully saved.')

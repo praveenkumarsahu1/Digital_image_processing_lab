@@ -1,4 +1,4 @@
-# Digital Image Processing (DIP) Lab Programs
+# Digital Image Processing (DIP) 
 This repository contains the **Digital Image Processing (DIP) laboratory programs**, implemented as part of the academic coursework. The programs cover fundamental image processing techniques and concepts using Python/OpenCV/Matlab (mention whichever you used).
 ## 📌 Contents
 * Basic image operations (read, display, resize, grayscale, etc.)

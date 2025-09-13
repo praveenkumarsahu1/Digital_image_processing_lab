@@ -1,0 +1,18 @@
+#Program to read 2 images
+import numpy as np
+import cv2 as cv
+
+# Load the image
+image1 = cv.imread("E:/DIP/img1.jpg")
+image2 = cv.imread("E:/DIP/img2.jpg")
+ 
+# Display the image
+cv.imshow("Image1", image1)
+cv.imshow("Image2", image2)
+ 
+# Wait for the user to press a key
+cv.waitKey(0)
+cv.waitKey(0)
+ 
+# Close all windows
+cv.destroyAllWindows()

@@ -1,0 +1,13 @@
+import cv2
+
+# Reading color image as grayscale
+gray = cv2.imread("E:/DIP/img2.jpg",0)
+
+# Showing grayscale image
+cv2.imshow("Grayscale Image", gray)
+
+# waiting for key event
+cv2.waitKey(0)
+
+# destroying all windows
+cv2.destroyAllWindows()

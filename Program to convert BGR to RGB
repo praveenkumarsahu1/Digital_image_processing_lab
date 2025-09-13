@@ -1,0 +1,12 @@
+#BGR to RGB
+import cv2
+# Reading color image
+img = cv2.imread("E:/DIP/img1.jpg")
+# Converting color image to grayscale image
+rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+# Showing the converted image
+cv2.imshow("Converted Image",rgb)
+# waiting for key event
+cv2.waitKey(0)
+# destroying all windows
+cv2.destroyAllWindows()

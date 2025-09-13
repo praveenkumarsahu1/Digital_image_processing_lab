@@ -1,0 +1,15 @@
+#Program to read an image
+import numpy as np
+import cv2 as cv
+
+# Load the image
+image = cv.imread("E:/unnati/DIP/img1.jpg")
+ 
+# Display the image
+cv.imshow("Image", image)
+ 
+# Wait for the user to press a key
+cv.waitKey(3000)
+ 
+# Close all windows
+cv.destroyAllWindows()

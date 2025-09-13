@@ -3,7 +3,7 @@ import numpy as np
 import cv2 as cv
 
 # Load the image
-image = cv.imread("E:/unnati/DIP/img1.jpg")
+image = cv.imread("E:/DIP/img1.jpg")
  
 # Display the image
 cv.imshow("Image", image)

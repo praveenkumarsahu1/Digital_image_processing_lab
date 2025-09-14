@@ -1,0 +1,15 @@
+# Importing OpenCV
+import cv2
+# Importing numpy
+import numpy as np
+# Importing matplotlib.pyplot
+import matplotlib.pyplot as plt
+# Reading the image
+img = cv2.imread("E:/DIP/img1.jpg")
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+# Displaying the original image
+plt.imshow(img)
+# Averaging the image
+img = cv2.blur(img, (3,3))
+# Displaying the blurred image
+plt.imshow(img)

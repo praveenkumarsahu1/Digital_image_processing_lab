@@ -1,0 +1,16 @@
+# import required libraries
+import cv2
+import matplotlib.pyplot as plt
+# load the input image
+img = cv2.imread("E:/DIP/img10.jpeg")
+# convert BGR to RGB to display using matplotlib
+imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+# convert the input image to grayscale
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# apply thresholding to convert grayscale to binary image
+ret,thresh = cv2.threshold(gray,70,255,0)
+# display Original, Grayscale and Binary Images
+plt.subplot(131),plt.imshow(imgRGB,cmap = 'gray'),plt.title('Original Image'), plt.axis('off')
+plt.subplot(132),plt.imshow(gray,cmap = 'gray'),plt.title('Grayscale Image'),plt.axis('off')
+plt.subplot(133),plt.imshow(thresh,cmap = 'gray'),plt.title('Binary Image'),plt.axis('off')
+plt.show()
